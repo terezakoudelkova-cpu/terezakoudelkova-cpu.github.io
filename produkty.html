@@ -1,1 +1,111 @@
 <a href="/index.html"> o produktech</a>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .produkty {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .produkt {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .produkt img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .produkt h3 {
+            margin-top: 10px;
+        }
+
+        .cena {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Naše produkty</h1>
+    <nav>
+        <a href="index.html">Domů</a>
+        <a href="produkty.html">Produkty</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="produkty">
+
+        <div class="produkt">
+            <img src="images/produkt1.jpg" alt="Produkt 1">
+            <h3>Produkt 1</h3>
+            <p>Kvalitní produkt vhodný pro každodenní použití.</p>
+            <p class="cena">299 Kč</p>
+        </div>
+
+        <div class="produkt">
+            <img src="images/produkt2.jpg" alt="Produkt 2">
+            <h3>Produkt 2</h3>
+            <p>Moderní design a skvělý výkon.</p>
+            <p class="cena">499 Kč</p>
+        </div>
+
+        <div class="produkt">
+            <img src="images/produkt3.jpg" alt="Produkt 3">
+            <h3>Produkt 3</h3>
+            <p>Ideální volba pro každého.</p>
+            <p class="cena">199 Kč</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Moje stránka</p>
+</footer>
+
+</body>
+</html>
